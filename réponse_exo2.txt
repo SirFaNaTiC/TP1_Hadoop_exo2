@@ -92,7 +92,128 @@ Question 3 : Quelle somme est dépensée dans la ville de San Francisco avec cha
 
 Sur le fichier purchases_extrait100.txt :
 
-
+Discover        260.65
 
 Sur le fichier purchases.txt:
 
+Amex    1984573.89
+Cash    1982297.87
+Discover        2009176.53
+MasterCard      2007667.05
+Visa    2011855.20
+
+Question 4 : Dans quelle ville la catégorie Women’s Clothing a permis de générer le plus d’argent Cash ?
+
+Sur le fichier purchases_extrait100.txt :
+
+San Jose        215.82
+
+Sur le fichier purchases.txt:
+
+Albuquerque     118226.70
+Anaheim 106273.31
+Anchorage       106051.24
+Arlington       111398.25
+Atlanta 112385.78
+Aurora  105366.77
+Austin  112179.79
+Bakersfield     116212.07
+Baltimore       118177.13
+Baton Rouge     101145.42
+Birmingham      102989.95
+Boise   99972.73
+Boston  104122.06
+Buffalo 106385.06
+Chandler        105094.93
+Charlotte       115452.98
+Chesapeake      112692.24
+Chicago 117213.37
+Chula Vista     107576.24
+Cincinnati      113988.10
+Cleveland       120199.54
+Colorado Springs        123911.43
+Columbus        106945.15
+Corpus Christi  116000.28
+Dallas  111277.58
+Denver  104711.30
+Detroit 113409.69
+Durham  110816.48
+El Paso 109341.82
+Fort Wayne      110160.60
+Fort Worth      107735.10
+Fremont 99912.08
+Fresno  132743.03
+Garland 119229.77
+Gilbert 116468.35
+Glendale        112350.45
+Greensboro      123411.60
+Henderson       108266.29
+Hialeah 104554.11
+Honolulu        115567.56
+Houston 111415.72
+Indianapolis    114818.65
+Irvine  115108.68
+Irving  116750.27
+Jacksonville    108668.70
+Jersey City     111052.98
+Kansas City     102911.81
+Laredo  112177.75
+Las Vegas       124790.58
+Lexington       115450.40
+Lincoln 116855.26
+Long Beach      115555.24
+Los Angeles     113426.15
+Louisville      110537.22
+Lubbock 106398.96
+Madison 112691.44
+Memphis 115445.76
+Mesa    122191.10
+Miami   112546.01
+Milwaukee       122684.44
+Minneapolis     111520.02
+Nashville       104386.85
+New Orleans     104955.76
+New York        106444.57
+Newark  118800.52
+Norfolk 104789.18
+North Las Vegas 112664.94
+Oakland 114688.83
+Oklahoma City   109963.46
+Omaha   114305.28
+Orlando 111291.16
+Philadelphia    108501.04
+Phoenix 110096.09
+Pittsburgh      116840.05
+Plano   103931.93
+Portland        108295.98
+Raleigh 111218.46
+Reno    112408.51
+Richmond        123302.50
+Riverside       114609.08
+Rochester       111031.87
+Sacramento      120990.55
+Saint Paul      103636.20
+San Antonio     105770.89
+San Bernardino  110136.15
+San Diego       113557.92
+San Francisco   113330.89
+San Jose        109651.82
+Santa Ana       108566.51
+Scottsdale      112824.73
+Seattle 103835.42
+Spokane 116400.03
+St. Louis       112585.06
+St. Petersburg  115258.68
+Stockton        108803.63
+Tampa   119249.18
+Toledo  104752.38
+Tucson  106221.16
+Tulsa   113692.55
+Virginia Beach  110904.14
+Washington      114266.79
+Wichita 105854.61
+Winston–Salem   107966.71
+
+Réponse c'est Fresno (132 743.03 (montant le plus élevé dans la liste fournie)).
+
+Question 5 : 

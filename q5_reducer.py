@@ -1,20 +1,22 @@
 #!/usr/bin/env python3
 import sys
-
-# Q5: À quelle heure les clients dépensent-ils le plus ?
-hour_total = {}
-
+current = None
+total = 0.0
 for line in sys.stdin:
-    hour, amount = line.strip().split('\t', 1)
-    amount = float(amount)
-    hour_total[hour] = hour_total.get(hour, 0) + amount
-
-# Trouver l'heure avec le montant le plus élevé
-if hour_total:
-    max_hour = max(hour_total, key=hour_total.get)
-    print(f"Heure avec le plus de dépenses: {max_hour}h - Total: {hour_total[max_hour]:.2f}€")
-    print("\nDétail par heure:")
-    for hour in sorted(hour_total.keys()):
-        print(f"{hour}h\t{hour_total[hour]:.2f}")
-else:
-    print("Aucune donnée trouvée")
+    line=line.strip()
+    if not line: continue
+    key, val = line.split('\t',1)
+    try:
+        v = float(val)
+    except:
+        continue
+    if current == key:
+        total += v
+    else:
+        if current is not None:
+            print(f"{current}\t{total:.2f}")
+        current = key
+        total = v
+if current is not None:
+    print(f"{current}\t{total:.2f}")
+# ensuite trier localement pour trouver l'heure max: sort -k2 -nr | head -n1
