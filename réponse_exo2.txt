@@ -216,4 +216,22 @@ Winston–Salem   107966.71
 
 Réponse c'est Fresno (132 743.03 (montant le plus élevé dans la liste fournie)).
 
-Question 5 : 
+Question 5 :  À quelle heure les clients dépensent-ils le plus ?
+
+Sur le fichier purchases_extrait100.txt :
+
+09      23205.48
+
+Sur le fichier purchases.txt:
+
+09      114767312.45
+10      114997301.67
+11      114799964.72
+12      114909978.09
+13      115061758.15
+14      114886427.44
+15      114916347.74
+16      115228708.28
+17      114890154.72
+
+Il dépense le plus à 16h — 115,228,708.28 (heure avec la dépense totale maximale).

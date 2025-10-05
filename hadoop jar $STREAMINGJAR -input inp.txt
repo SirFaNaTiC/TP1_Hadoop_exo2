@@ -30,6 +30,14 @@ hadoop jar $STREAMINGJAR -input input/purchases.txt -output sortie \
 -mapper "python3 q4_mapper.py" -reducer "python3 q4_reducer.py" \
 -file q4_mapper.py -file q4_reducer.py
 
+hadoop jar $STREAMINGJAR -input input/purchases_extrait100.txt -output sortie \
+-mapper "python3 q5_mapper.py" -reducer "python3 q5_reducer.py" \
+-file q5_mapper.py -file q5_reducer.py
+
+hadoop jar $STREAMINGJAR -input input/purchases.txt -output sortie \
+-mapper "python3 q5_mapper.py" -reducer "python3 q5_reducer.py" \
+-file q5_mapper.py -file q5_reducer.py
+
 export STREAMINGJAR='/usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.3.2.jar'
 
 hadoop fs -rm -r -f sortie

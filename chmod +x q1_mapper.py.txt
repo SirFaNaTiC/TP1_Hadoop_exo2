@@ -9,3 +9,6 @@ chmod +x q3_reducer.py
 
 chmod +x q4_mapper.py
 chmod +x q4_reducer.py
+
+chmod +x q5_mapper.py
+chmod +x q5_reducer.py
