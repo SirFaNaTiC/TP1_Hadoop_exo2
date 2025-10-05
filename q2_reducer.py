@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import sys
 
+# Q2: Somme totale dépensée pour chaque catégorie
 category_total = {}
 
 for line in sys.stdin:
@@ -8,5 +9,6 @@ for line in sys.stdin:
     amount = float(amount)
     category_total[category] = category_total.get(category, 0) + amount
 
-for category, total in category_total.items():
-    print(f"{category}\t{total}")
+# Afficher les résultats triés par catégorie avec 2 décimales
+for category in sorted(category_total.keys()):
+    print(f"{category}\t{category_total[category]:.2f}")

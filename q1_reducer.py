@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import sys
 
+# Q1: Nombre d'achats effectués pour chaque catégorie
 category_count = {}
 
 for line in sys.stdin:
@@ -8,5 +9,6 @@ for line in sys.stdin:
     count = int(count)
     category_count[category] = category_count.get(category, 0) + count
 
-for category, count in category_count.items():
-    print(f"{category}\t{count}")
+# Afficher les résultats triés par catégorie
+for category in sorted(category_count.keys()):
+    print(f"{category}\t{category_count[category]}")

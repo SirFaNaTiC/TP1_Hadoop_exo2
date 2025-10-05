@@ -1,0 +1,7 @@
+2023-01-01 10:30:00,Electronics,Mobile Phone,New York,299.99,Credit Card
+2023-01-01 11:15:00,Clothing,Women's Clothing,San Francisco,89.50,Cash
+2023-01-01 12:00:00,Electronics,Laptop,Boston,1299.99,Credit Card
+2023-01-01 13:30:00,Clothing,Men's Clothing,New York,65.00,Debit Card
+2023-01-01 14:15:00,Electronics,Headphones,San Francisco,199.99,Cash
+2023-01-01 15:00:00,Books,Fiction,Chicago,25.99,Credit Card
+2023-01-01 16:30:00,Electronics,Tablet,Los Angeles,399.99,Debit Card
