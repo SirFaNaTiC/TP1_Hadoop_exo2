@@ -1,0 +1,7 @@
+hadoop jar $STREAMINGJAR -input input/purchases_extrait100.txt -output sortie \
+  -mapper "python3 q1_mapper.py" -reducer "python3 q1_reducer.py" \
+  -file q1_mapper.py -file q1_reducer.py
+
+hadoop jar $STREAMINGJAR -input input/purchases_extrait100.txt -output sortie \
+  -mapper "python3 q2_mapper.py" -reducer "python3 q2_reducer.py" \
+  -file q2_mapper.py -file q2_reducer.py

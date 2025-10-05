@@ -1,0 +1,2 @@
+chmod +x q1_mapper.py
+chmod +x q1_reducer.py
