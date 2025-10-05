@@ -1,10 +1,16 @@
 #!/usr/bin/env python3
-import sys
+import sys, csv, re
+def parse(line):
+    line=line.strip()
+    if not line: return None
+    parts = list(csv.reader([line], delimiter='\t'))[0]
+    if len(parts) < 6:
+        parts = re.split(r'\s{2,}', line)
+    return parts if len(parts) >= 6 else None
 
-# Q1: Nombre d'achats effectués pour chaque catégorie
 for line in sys.stdin:
-    line = line.strip()
-    fields = line.split(',')
-    if len(fields) >= 6:  # Vérifier que la ligne contient tous les champs
-        category = fields[1]  # La catégorie est dans la 2e colonne (index 1)
+    parts = parse(line)
+    if not parts: continue
+    category = parts[3].strip()
+    if category:
         print(f"{category}\t1")
