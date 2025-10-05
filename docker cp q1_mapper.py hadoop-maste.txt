@@ -4,8 +4,8 @@ docker cp q1_reducer.py hadoop-master:/root/ventes
 docker cp q2_mapper.py hadoop-master:/root/ventes
 docker cp q2_reducer.py hadoop-master:/root/ventes
 
-docker cp q2_mapper.py hadoop-master:/root/ventes
-docker cp q2_reducer.py hadoop-master:/root/ventes
+docker cp q3_mapper.py hadoop-master:/root/ventes
+docker cp q3_reducer.py hadoop-master:/root/ventes
 
 docker cp q2_mapper.py hadoop-master:/root/ventes
 docker cp q2_reducer.py hadoop-master:/root/ventes

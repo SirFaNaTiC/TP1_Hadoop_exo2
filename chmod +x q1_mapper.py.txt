@@ -1,2 +1,5 @@
 chmod +x q1_mapper.py
 chmod +x q1_reducer.py
+
+chmod +x q2_mapper.py
+chmod +x q2_reducer.py

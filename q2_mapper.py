@@ -1,11 +1,20 @@
 #!/usr/bin/env python3
-import sys
+import sys, csv, re
+def parse(line):
+    line=line.strip()
+    if not line: return None
+    parts = list(csv.reader([line], delimiter='\t'))[0]
+    if len(parts) < 6:
+        parts = re.split(r'\s{2,}', line)
+    return parts if len(parts) >= 6 else None
 
-# Q2: Somme totale dépensée pour chaque catégorie
 for line in sys.stdin:
-    line = line.strip()
-    fields = line.split(',')
-    if len(fields) >= 6:  # Vérifier que la ligne contient tous les champs
-        category = fields[1]  # La catégorie est dans la 2e colonne (index 1)
-        amount = float(fields[4])  # Le montant est dans la 5e colonne (index 4)
-        print(f"{category}\t{amount}")
+    parts = parse(line)
+    if not parts: continue
+    category = parts[3].strip()
+    amount = parts[4].strip()
+    try:
+        a = float(amount)
+    except:
+        continue
+    print(f"{category}\t{a}")

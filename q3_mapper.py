@@ -1,13 +1,21 @@
 #!/usr/bin/env python3
-import sys
+import sys, csv, re
+def parse(line):
+    line=line.strip()
+    if not line: return None
+    parts = list(csv.reader([line], delimiter='\t'))[0]
+    if len(parts) < 6:
+        parts = re.split(r'\s{2,}', line)
+    return parts if len(parts) >= 6 else None
 
-# Q3: Somme dépensée dans San Francisco avec chaque moyen de paiement
 for line in sys.stdin:
-    line = line.strip()
-    fields = line.split(',')
-    if len(fields) >= 6:  # Vérifier que la ligne contient tous les champs
-        city = fields[3]  # La ville est dans la 4e colonne (index 3)
-        payment_method = fields[5]  # Le moyen de paiement est dans la 6e colonne (index 5)
-        amount = float(fields[4])  # Le montant est dans la 5e colonne (index 4)
-        if city == "San Francisco":
-            print(f"{payment_method}\t{amount}")
+    parts = parse(line)
+    if not parts: continue
+    city = parts[2].strip().lower()
+    payment = parts[5].strip()
+    try:
+        amount = float(parts[4].strip())
+    except:
+        continue
+    if city == 'san francisco' or city == 'san francisco' :  # keep exact check
+        print(f"{payment}\t{amount}")
